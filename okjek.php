@@ -3,15 +3,16 @@ $secret = '83415d06-ec4e-11e6-a41b-6c40088ab51e';
 $headers = array();
 $headers[] = 'Content-Type: application/json';
 $headers[] = 'X-AppVersion: 3.30.2';
+$headers[] = "X-User-Locale: id_ID";
 $headers[] = "X-Uniqueid: ac94e5d0e7f3f".rand(111,999);
 $headers[] = 'X-Location: -6.405821,106.064193';
 
         echo "\n";
         echo "\e[92m--------------------------------------------------\n";
-        echo "\e[31m|           NOT SAFE FOR WORK IF 02              |\n";
-        echo "\e[35m|         Recode doesn't make you a pro          |\n";
-        echo "\e[32m|         Thanks to Netwezen Revolution          |\n";
-        echo "\e[33m|              Author : Sibirubah                |\n";
+        echo "\e[31m|    Auto Daftar dan Auto Injek Voucer Gojek     |\n";
+        echo "\e[35m|                 Privete Tools                  |\n";
+        echo "\e[32m|               Pertalite Version                |\n";
+        echo "\e[33m|                 Soeb Uzumaki                   |\n";
         echo "\e[92m--------------------------------------------------\n";
         echo "\n";
         ulang:
@@ -48,7 +49,7 @@ $headers[] = 'X-Location: -6.405821,106.064193';
             echo "Token ~> ".$token." \n";
             echo "\e[92m[+] Token Tersimpan di ~> ".$live." \n\n";
                 
-echo "\e[96m[!] Mencoba Reedem Voucher 20+10 : GOFOODSANTAI19 \n";
+echo "\e[96m[!] Mencoba Injek Voucher Food yang ke-1 \n";
 $data3 = '{"promo_code":"GOFOODSANTAI19"}';
 $claim = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data3, $headers);
 $claims = json_decode($claim[0]); 
@@ -62,11 +63,11 @@ echo "\e[92m [✓]".$claims->data->message."  [•] Token Tersimpan di ~> ".$liv
 } 
 else 
 {
-echo "\e[91m [×] Gagal Claim Voucer !";
+echo "\e[91m [×] Gagal Bray.....!";
 sleep(5);
 echo "\n";
 
-echo "\e[96m[!] Mencoba Reedem Voucher 15+10 : GOFOODSANTAI11 \n";
+echo "\e[96m[!] Mencoba Injek Voucher Food yang ke-2 \n";
 $data4 = '{"promo_code":"GOFOODSANTAI11"}';
 $claim1 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data4, $headers);
 $claims1 = json_decode($claim1[0]);
@@ -79,10 +80,10 @@ fclose($fopen3);
 echo "\e[92m [✓]".$claims1->data->message."  [•] Tersimpan di ~> ".$live3;
 } else 
 {
-echo "\e[91m [×] Gagal Claim Voucer !";
-sleep(5);
+echo "\e[91m [×] Gagal Lagi Bray....!";
+sleep(60);
 echo "\n";
- echo "\e[96m[!] Mencoba Redeem Voucher 10+10 : GOFOODSANTAI08 \n";
+ echo "\e[96m[!] Mencoba Injek Voucher Food yang ke-3 \n";
  $data5 = '{"promo_code":"GOFOOD021120A"}';
  $claim2 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data5, $headers);
  $claims2 = json_decode($claim2[0]);
@@ -95,13 +96,13 @@ fclose($fopen4);
 echo "\e[92m [✓]".$claims2->data->message." [•] Tersimpan di ~> ".$live4;
       } else 
       {
-echo "\e[91m [×] Gagal Claim Voucer !";
+echo "\e[91m [×] Nasib La Bray, Gagal Lagi....!!";
 }
 }
 }
                 sleep(5);
                 echo "\n";
-                echo "\e[96m[!] Mencoba Redeem Vocher : COBAINGOJEK \n";
+                echo "\e[96m[!] Mencoba Injek Voucher Lain 1 \n";
                 $data6 = '{"promo_code":"COBAINGOJEK"}';
                 $claim3 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data6, $headers);
                 $claims3 = json_decode($claim3[0]);
@@ -110,12 +111,12 @@ echo "\e[91m [×] Gagal Claim Voucer !";
                                 echo "\e[92m [✓]".$claims3->data->message;
                         } else
                             {
-                                echo "\e[91m [×] Gagal Claim Voucer !";
+                                echo "\e[91m [×] Gagal Lagi Bray...!";
 
                             }
                 sleep(5);
                 echo "\n";
-                echo "\e[96m[+] Mencoba Redeem Vocher : AYOCOBAGOJEK \n";
+                echo "\e[96m[+] Mencoba Injek Voucher Lain 2 \n";
                 $data7 = '{"promo_code":"AYOCOBAGOJEK"}';
                 $claim4 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data7, $headers);
                 $claims4 = json_decode($claim4[0]);
@@ -124,9 +125,10 @@ echo "\e[91m [×] Gagal Claim Voucer !";
                                 echo "\e[92m [✓]".$claims4->data->message;
                         } else
                             {
-                                echo "\e[91m [×] Gagal Claim Voucer !";
+                                echo "\e[91m [×] Nasib Mu La Bray, Gagal lagi...!";
                             }
                     sleep(5);
+                    echo "\n";
                     echo "\n";
                     
                 $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=10&page=1', $token);
