@@ -7,6 +7,7 @@ $headers[] = "X-User-Locale: id_ID";
 $headers[] = "X-Uniqueid: ac94e5d0e7f3f".rand(111,999);
 $headers[] = 'X-Location: -6.405821,106.064193';
 
+
         echo "\n";
         echo "\e[92m--------------------------------------------------\n";
         echo "\e[31m|    Auto Daftar dan Auto Injek Voucer Gojek     |\n";
