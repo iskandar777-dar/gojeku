@@ -8,6 +8,7 @@ $headers[] = "X-Uniqueid: ac94e5d0e7f3f".rand(111,999);
 $headers[] = 'X-Location: -6.405821,106.064193';
 
         echo "\n";
+        echo "\n";
         echo "\e[92m--------------------------------------------------\n";
         echo "\e[31m|    Auto Daftar dan Auto Injek Voucer Gojek     |\n";
         echo "\e[35m|                 Privete Tools                  |\n";
@@ -66,7 +67,7 @@ else
 echo "\e[91m [×] Gagal Bray.....!";
 sleep(5);
 echo "\n";
-
+echo "\n";
 echo "\e[96m[!] Mencoba Injek Voucher Food yang ke-2 \n";
 $data4 = '{"promo_code":"GOFOODSANTAI11"}';
 $claim1 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data4, $headers);
@@ -82,6 +83,7 @@ echo "\e[92m [✓]".$claims1->data->message."  [•] Tersimpan di ~> ".$live3;
 {
 echo "\e[91m [×] Gagal Lagi Bray....!";
 sleep(60);
+echo "\n";
 echo "\n";
  echo "\e[96m[!] Mencoba Injek Voucher Food yang ke-3 \n";
  $data5 = '{"promo_code":"GOFOOD021120A"}';
@@ -102,6 +104,7 @@ echo "\e[91m [×] Nasib La Bray, Gagal Lagi....!!";
 }
                 sleep(5);
                 echo "\n";
+                echo "\n";
                 echo "\e[96m[!] Mencoba Injek Voucher Lain 1 \n";
                 $data6 = '{"promo_code":"COBAINGOJEK"}';
                 $claim3 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data6, $headers);
@@ -115,6 +118,7 @@ echo "\e[91m [×] Nasib La Bray, Gagal Lagi....!!";
 
                             }
                 sleep(5);
+                echo "\n";
                 echo "\n";
                 echo "\e[96m[+] Mencoba Injek Voucher Lain 2 \n";
                 $data7 = '{"promo_code":"AYOCOBAGOJEK"}';
@@ -151,22 +155,30 @@ echo "\e[91m [×] Nasib La Bray, Gagal Lagi....!!";
                 $expired7 = getStr1('"expiry_date":"','"',$cekvoucher,'7');
                     
                 
-                echo "\n".color("yellow","!] Total voucher ".$total." : ");
+                echo "\n".color("yellow","!] Total voucher ada ".$total." : ");
+                echo "\n";
                 echo "\n".color("green","1] ".$voucher1);
                 echo "\n".color("red"," EXP ~> ".$expired1);
+                echo "\n";
                 echo "\n".color("green","2] ".$voucher2);
                 echo "\n".color("red"," EXP ~> ".$expired2);
+                echo "\n";
                 echo "\n".color("green","3] ".$voucher3);
                 echo "\n".color("red"," EXP ~> ".$expired3);
+                echo "\n";
                 echo "\n".color("green","4] ".$voucher4);
                 echo "\n".color("red"," EXP ~> ".$expired4);
+                echo "\n";
                 echo "\n".color("green","5] ".$voucher5);
                 echo "\n".color("red"," EXP ~> ".$expired5);
+                echo "\n";
                 echo "\n".color("green","6] ".$voucher6);
                 echo "\n".color("red"," EXP ~> ".$expired6);
+                echo "\n";
                 echo "\n".color("green","7] ".$voucher7);
                 echo "\n".color("red"," EXP ~> ".$expired7);
                 echo"\n";
+                echo "\n";
 
 }else
     {
