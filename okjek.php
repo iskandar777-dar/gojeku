@@ -1,12 +1,12 @@
 <?php
 $secret = '83415d06-ec4e-11e6-a41b-6c40088ab51e';
 $headers = array();
+$headers[]=  'Accept-Language: id-ID';
 $headers[] = 'Content-Type: application/json';
 $headers[] = 'X-AppVersion: 3.30.2';
 $headers[] = "X-User-Locale: id_ID";
 $headers[] = "X-Uniqueid: ac94e5d0e7f3f".rand(111,999);
-$headers[] = 'X-Location: -6.405821,106.064193';
-
+$headers[] = 'X-Location: -6.4077148,106.0653919';
 
         echo "\n";
         echo "\e[92m--------------------------------------------------\n";
@@ -35,7 +35,7 @@ $headers[] = 'X-Location: -6.405821,106.064193';
         $regs = json_decode($reg[0]);
         if($regs->success == true) {
             otp:
-            echo "\e[93m[+] Input OTP : ";
+            echo "\e[93m[+] Masukkan OTP : ";
             $otp = trim(fgets(STDIN));
             $data2 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $regs->data->otp_token . '"},"client_secret":"' . $secret . '"}';
             $verif = curl('https://api.gojekapi.com/v5/customers/phone/verify', $data2, $headers);
@@ -79,13 +79,15 @@ $fopen3 = fopen($live3, "a+");
 $fwrite3 = fwrite($fopen3, "TOKEN => ".$token." \n");
 fclose($fopen3);
 echo "\e[92m [✓] Berhasil BraY Inject Voucher nya.....!!";
-} else 
+} 
+ else 
 {
 echo "\e[91m [×] Gagal Lagi Bray....!";
-sleep(60);
+sleep(5);
 echo "\n";
 echo "\n";
  echo "\e[96m[!] Mencoba Injek Voucher Food yang ke-3 \n";
+ sleep(60);
  $data5 = '{"promo_code":"GOFOOD021120A"}';
  $claim2 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data5, $headers);
  $claims2 = json_decode($claim2[0]);
