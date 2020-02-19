@@ -8,7 +8,6 @@ $headers[] = "X-Uniqueid: ac94e5d0e7f3f".rand(111,999);
 $headers[] = 'X-Location: -6.405821,106.064193';
 
         echo "\n";
-        echo "\n";
         echo "\e[92m--------------------------------------------------\n";
         echo "\e[31m|    Auto Daftar dan Auto Injek Voucer Gojek     |\n";
         echo "\e[35m|                 Privete Tools                  |\n";
@@ -60,8 +59,7 @@ $live2 = "voucher1.txt";
 $fopen2 = fopen($live2, "a+");
 $fwrite2 = fwrite($fopen2, "TOKEN => ".$token." \n");
 fclose($fopen2);
-echo "\e[92m [✓]".$claims->data->message."  [•] Token Tersimpan di ~> ".$live2;
-} 
+echo "\e[92m [✓] Berhasil BraY Inject Voucher nya.....!!";
 else 
 {
 echo "\e[91m [×] Gagal Bray.....!";
@@ -78,7 +76,7 @@ $live3 = "voucher2.txt";
 $fopen3 = fopen($live3, "a+");
 $fwrite3 = fwrite($fopen3, "TOKEN => ".$token." \n");
 fclose($fopen3);
-echo "\e[92m [✓]".$claims1->data->message."  [•] Tersimpan di ~> ".$live3;
+echo "\e[92m [✓] Berhasil BraY Inject Voucher nya.....!!";
 } else 
 {
 echo "\e[91m [×] Gagal Lagi Bray....!";
@@ -95,7 +93,7 @@ $live4 = "voucher3.txt";
 $fopen4 = fopen($live4, "a+");
 $fwrite4 = fwrite($fopen4, "TOKEN => ".$token." \n");
 fclose($fopen4);
-echo "\e[92m [✓]".$claims2->data->message." [•] Tersimpan di ~> ".$live4;
+echo "\e[92m [✓] Berhasil BraY Inject Voucher nya.....!!";
       } else 
       {
 echo "\e[91m [×] Nasib La Bray, Gagal Lagi....!!";
@@ -111,7 +109,7 @@ echo "\e[91m [×] Nasib La Bray, Gagal Lagi....!!";
                 $claims3 = json_decode($claim3[0]);
                 if($claims3->success == true)
                         {
-                                echo "\e[92m [✓]".$claims3->data->message;
+                                echo "\e[92m [✓] Berhasil BraY Inject Voucher nya.....!!";
                         } else
                             {
                                 echo "\e[91m [×] Gagal Lagi Bray...!";
@@ -126,7 +124,7 @@ echo "\e[91m [×] Nasib La Bray, Gagal Lagi....!!";
                 $claims4 = json_decode($claim4[0]);
                 if($claims4->success == true)
                         {
-                                echo "\e[92m [✓]".$claims4->data->message;
+                                echo "\e[92m [✓] Berhasil BraY Inject Voucher nya.....!!";
                         } else
                             {
                                 echo "\e[91m [×] Nasib Mu La Bray, Gagal lagi...!";
