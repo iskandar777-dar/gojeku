@@ -61,6 +61,7 @@ $fopen2 = fopen($live2, "a+");
 $fwrite2 = fwrite($fopen2, "TOKEN => ".$token." \n");
 fclose($fopen2);
 echo "\e[92m [✓] Berhasil BraY Inject Voucher nya.....!!";
+}
 else 
 {
 echo "\e[91m [×] Gagal Bray.....!";
