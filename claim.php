@@ -77,7 +77,8 @@ $fopen3 = fopen($live3, "a+");
 $fwrite3 = fwrite($fopen3, "TOKEN => ".$token." \n");
 fclose($fopen3);
 echo "\e[92m [✓] Berhasil BraY Inject Voucher nya.....!!";
-} else 
+} 
+ else 
 {
 echo "\e[91m [×] Gagal Lagi Bray....!";
 sleep(5);
