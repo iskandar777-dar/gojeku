@@ -1,6 +1,7 @@
 <?php
 $secret = '83415d06-ec4e-11e6-a41b-6c40088ab51e';
 $headers = array();
+$headers[]=  'Accept-Language: id-ID';
 $headers[] = 'Content-Type: application/json';
 $headers[] = 'X-AppVersion: 3.30.2';
 $headers[] = "X-User-Locale: id_ID";
@@ -34,7 +35,7 @@ $headers[] = 'X-Location: -6.405821,106.064193';
         $regs = json_decode($reg[0]);
         if($regs->success == true) {
             otp:
-            echo "\e[93m[+] Input OTP : ";
+            echo "\e[93m[+] Masukkan OTP : ";
             $otp = trim(fgets(STDIN));
             $data2 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $regs->data->otp_token . '"},"client_secret":"' . $secret . '"}';
             $verif = curl('https://api.gojekapi.com/v5/customers/phone/verify', $data2, $headers);
