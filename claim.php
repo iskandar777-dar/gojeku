@@ -100,7 +100,7 @@ fclose($fopen4);
 echo "\e[92m [✓] Berhasil BraY Inject Voucher nya.....!!";
       } else 
       {
-echo "\e[91m [×] ".$claims2->data->message.;
+echo "\e[91m [×] ".$claims2;
 }
 }
 }
