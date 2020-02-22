@@ -87,7 +87,7 @@ sleep(5);
 echo "\n";
 echo "\n";
  echo "\e[96m[!] Mencoba Injek Voucher Food yang ke-3 \n";
- sleep(60);
+ sleep(120);
  $data5 = '{"promo_code":"GOFOOD021120A"}';
  $claim2 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data5, $headers);
  $claims2 = json_decode($claim2[0]);
@@ -100,7 +100,7 @@ fclose($fopen4);
 echo "\e[92m [✓] Berhasil BraY Inject Voucher nya.....!!";
       } else 
       {
-echo "\e[91m [×] Nasib La Bray, Gagal Lagi....!!";
+echo "\e[91m [×] ".$claims2->data->message.;
 }
 }
 }
